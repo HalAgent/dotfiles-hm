@@ -29,10 +29,10 @@ let
     cmake-language-server
     docker-ls
     # dhall-lsp-server
-    haskell-language-server
+    # removed: haskell-language-server
     java-language-server
     kotlin-language-server
-    metals
+    # removed: metals
     nil
     nodePackages.bash-language-server
     nodePackages.typescript-language-server
@@ -103,7 +103,7 @@ in
         ruff
         rust-analyzer
         (writeScriptBin "vimtabdiff.py" (builtins.readFile ./bin/vimtabdiff.py))
-        copyparty
+        # removed: copyparty
         jjui
         lazyjj
       ]
